@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Signika Negative", sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+nav {
+    margin-bottom: 40px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list>li {
+    margin-right: 20px;
+}
+
+.nav-list>li>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.nav-list a:hover {
+    color: tomato;
+}
+
+.nav-list a.active {
+    color: tomato;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.about_us>h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about_us>p {
+    font-size: 18px;
+}
+
+
+
+
+.advantages>h2 {
+    margin: 15px 0;
+}
+
+
+.advantages-list {
+    padding-left: 0;
+}
+
+.top-table>h2 {
+    margin-top: 15px;
+}
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1.5px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+}
+
+footer>a {
+    color: #ddd;
+}
+
+
+@media (max-width: 800px) {
+
+    .about_us img {
+        width: 500px;
+    }
+
+    .nav-list {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        text-align: center;
+    }
+
+    .about-us img {
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list>li>a {
+        font-size: calc(100% + 4px);
+    }
+}
+
+@media (max-width: 400px) {
+
+    .about-us img {
+        width: 100%;
+    }
+
+    table {
+        font-size: calc(100% - 4px);
+    }
+}

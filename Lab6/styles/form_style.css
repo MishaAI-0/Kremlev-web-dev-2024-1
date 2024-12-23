@@ -1,0 +1,157 @@
+.order-form {
+    margin: 20px;
+}
+
+.order-form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.order-form-content label {
+    margin: 12px 0 5px 0;
+}
+
+.user-order,
+.user-data {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.order-form button,
+select,
+.text-input {
+    height: 4vh;
+}
+
+.order-form h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.subscribe-checkbox {
+    flex-direction: row;
+    margin: 20px 0 5px 0;
+}
+
+.delivery-time {
+    border: none;
+    margin-top: 10px;
+}
+
+.delivery-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-options label {
+    margin-top: 5px;
+}
+
+.form-buttons {
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons button {
+    width: 49%;
+    height: 4vh;
+}
+
+.dish-label,
+.nothing {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+#combos {
+    margin-bottom: 40px;
+}
+
+#combos h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.combos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.combo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.combo-dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.combo-dish img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.combo-dish img:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+.combo-dish p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.combo-dish p:last-child {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.notification #ok-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.notification #ok-button:hover {
+    background-color: tomato;
+    color: white;
+}

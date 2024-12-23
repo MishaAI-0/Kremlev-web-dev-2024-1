@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Signika Negative", sans-serif;
+}
+
+
+.container {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: tomato;
+}
+
+.nav-list a.active {
+    color: tomato;
+}
+
+section h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: white;
+    border-radius: 35px;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    border: 2px solid transparent;
+}
+
+.item.selected {
+    border: 2px solid tomato;
+}
+
+.item:hover {
+    border: 2px solid tomato;
+
+}
+
+h2 {
+    margin: 40px 0 10px 0;
+}
+
+.item>img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.item p {
+    font-size: 16px;
+}
+
+.item .main-info {
+    margin-top: 15px;
+}
+
+.item>.main-item>.price {
+    font-size: 20px;
+}
+
+.item>.main-item>.name {
+    font-size: 18px;
+}
+
+.item>form>p {
+    color: gray;
+}
+
+.item button {
+    background-color: #f1eee9;
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.item>form>button:hover {
+    background-color: tomato;
+}
+
+
+
+
+
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    padding: 30px;
+}
+
+footer>a {
+    color: #ddd;
+}
+
+
+
+
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    color: #127e12;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: rgba(0, 123, 0, 0.5);
+    color: #ffffff;
+}
+
+@media (max-width: 800px) {
+
+    .menu-section>.menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    header h1 {
+        text-align: center;
+    }
+
+
+    nav {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-section>.menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
